@@ -7,6 +7,16 @@ ol, ul {
   padding-left: 30px;
 }
 
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
 .square {
   background: #fff;
   border: 1px solid #999;
@@ -22,3 +32,19 @@ ol, ul {
   width: 34px;
 }
 
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
